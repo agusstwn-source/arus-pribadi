@@ -1,0 +1,37 @@
+ARUS — CARA MEMASANG DI HP ANDROID (GRATIS)
+
+Cara yang direkomendasikan: publikasikan file aplikasi statis ke GitHub Pages agar aplikasi punya alamat HTTPS dan bisa ditambahkan ke layar utama HP.
+
+BAGIAN A — SIAPKAN FILE
+1. Ekstrak ZIP ini di laptop.
+2. Siapkan empat file di folder hasil ekstraksi: index.html, manifest.json, icon.svg, sw.js.
+3. Jangan masukkan data transaksi atau file backup ke repository publik.
+
+BAGIAN B — HOSTING GRATIS DENGAN GITHUB PAGES
+1. Buka https://github.com dan masuk/buat akun.
+2. Buat repository baru dengan nama arus-pribadi.
+3. Pilih Public (GitHub Free memerlukan repository publik untuk Pages).
+4. Buat repository.
+5. Pada halaman repository pilih Add file > Upload files.
+6. Upload EMPAT file aplikasi di atas (index.html, manifest.json, icon.svg, sw.js) langsung ke root repository, bukan folder tambahan.
+7. Klik Commit changes.
+8. Buka Settings > Pages.
+9. Pada Build and deployment, pilih Deploy from a branch.
+10. Pilih branch main dan folder /(root), lalu Save.
+11. Tunggu publikasi selesai. Di halaman Pages akan muncul alamat HTTPS, biasanya https://NAMA-USER.github.io/arus-pribadi/ . Gunakan URL yang ditampilkan GitHub sebagai yang benar.
+
+BAGIAN C — PASANG DI HP ANDROID
+1. Kirim URL GitHub Pages tersebut ke HP atau buka percakapan ChatGPT yang sama dari HP.
+2. Buka URL di Chrome Android.
+3. Buka menu titik tiga (⋮), pilih Install app atau Add to Home screen, lalu konfirmasi.
+4. Buka ikon ARUS dari layar utama HP.
+5. Isi saldo awal setiap akun sesuai saldo asli pada tanggal mulai pencatatan.
+6. Tes dengan transaksi kecil dan cek saldo/rekap sebelum mulai memasukkan data sungguhan.
+
+PENTING TENTANG PRIVASI DAN DATA
+- File aplikasi yang ada di repository Public dapat dilihat orang lain. Jangan masukkan transaksi pribadi, nomor rekening, PIN, atau backup ke repository.
+- Aplikasi menyimpan data transaksi di penyimpanan lokal browser pada HP; kode statis di GitHub Pages tidak menyimpan transaksi lo di server.
+- Gunakan aplikasi dari URL yang sama dan browser yang sama. Jangan hapus data situs/browser atau uninstall sebelum membuat backup.
+- Buat backup JSON berkala dari menu pengaturan aplikasi dan simpan di tempat aman. Backup JSON berisi data keuangan; jangan dibagikan secara publik.
+- Untuk mencoba sebentar, link file HTML bisa dibuka dari HP, tetapi cara itu tidak ideal untuk pemasangan PWA. Hosting HTTPS direkomendasikan agar instalasi dan service worker berjalan.
+- GitHub Pages gratis dapat mengalami keterlambatan publikasi beberapa menit. Setelah upload perubahan, tunggu situs terbarui.

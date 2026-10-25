@@ -1,0 +1,14 @@
+{
+  "name": "ARUS — Keuangan Pribadi",
+  "short_name": "ARUS",
+  "description": "Pencatatan keuangan pribadi lokal dan offline.",
+  "lang": "id-ID",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f5f7fb",
+  "theme_color": "#101b33",
+  "icons": [
+    {"src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable"}
+  ]
+}
